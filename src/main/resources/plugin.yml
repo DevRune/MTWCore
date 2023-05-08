@@ -1,0 +1,3 @@
+name: MTWCore
+version: '${project.version}'
+main: nl.mtworld.mtwcore.MTWCore
