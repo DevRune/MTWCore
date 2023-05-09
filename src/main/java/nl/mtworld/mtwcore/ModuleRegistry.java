@@ -27,8 +27,4 @@ public class ModuleRegistry {
         this.moduleRegistry.values().forEach(AbstractModule::onDisable);
     }
 
-    public void onLoad() {
-        this.moduleRegistry.values().forEach(AbstractModule::onLoad);
-    }
-
 }

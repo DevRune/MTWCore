@@ -13,7 +13,6 @@ public abstract class AbstractModule {
     public AbstractModule(MTWCore mtwCore){
         this.mtwCore = mtwCore;
     }
-    public abstract void onLoad();
     public abstract void onEnable();
     public abstract void onDisable();
 
