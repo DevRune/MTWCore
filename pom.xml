@@ -71,5 +71,19 @@
             <artifactId>mongodb-driver-sync</artifactId>
             <version>4.9.0</version>
         </dependency>
+        <dependency>
+            <groupId>com.sk89q.worldguard</groupId>
+            <artifactId>worldguard-bukkit</artifactId>
+            <version>6.2.2</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/libs/worldguard-bukkit-6.2.2.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.sk89q.worldedit</groupId>
+            <artifactId>worldedit-bukkit</artifactId>
+            <version>6.1.9</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/libs/worldedit-bukkit-6.1.9.jar</systemPath>
+        </dependency>
     </dependencies>
 </project>
