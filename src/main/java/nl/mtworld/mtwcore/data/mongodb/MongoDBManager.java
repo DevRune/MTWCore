@@ -9,7 +9,7 @@ import org.bson.Document;
 
 public class MongoDBManager {
 
-    private MTWCore mtwCore;
+    private final MTWCore mtwCore;
 
     public MongoDBManager(MTWCore mtwCore){
         this.mtwCore = mtwCore;
@@ -20,7 +20,7 @@ public class MongoDBManager {
     MongoCollection<Document> playerData;
 
     public void connect(){
-        mongoClient = MongoClients.create(mtwCore.getConfig().getString("mongodb.connection"));
+        mongoClient = MongoClients.create("mongodb+srv://admin:MINETOPIAworldAdmin@cluster0.hzumy6e.mongodb.net/?retryWrites=true&w=majority");
         mongoDatabase = mongoClient.getDatabase("minetopiaworld");
         playerData = mongoDatabase.getCollection("player_data");
     }

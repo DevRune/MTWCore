@@ -9,6 +9,8 @@ public class DataModule extends AbstractModule {
     private MTWCore mtwCore;
     public DataModule(MTWCore mtwCore) {
         super(mtwCore);
+        this.mtwCore = mtwCore;
+        mtwCore.getMongoDBManager().connect();
     }
 
     @Override
